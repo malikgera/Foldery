@@ -30,6 +30,72 @@ Run from this directory (`desktop/`) so the `foldery` package is on `PYTHONPATH`
 
 Writing `desktop.ini` into protected Windows folders needs an elevated process. Foldery will say so if it cannot write.
 
+## Build app on Windows
+
+1. Install dependencies:
+
+```powershell
+python -m pip install -r requirements.txt
+python -m pip install pyinstaller
+```
+
+2. Put the app icon in the project root as `icon.ico`.
+
+3. Build a single-file EXE:
+
+```powershell
+pyinstaller --onefile --noconsole --name Foldery --icon=icon.ico --paths=. --hidden-import=config --hidden-import=i18n --hidden-import=i18n.catalog --hidden-import=platforms --hidden-import=services --hidden-import=ui app.py
+```
+
+4. The EXE will be created in `dist\Foldery.exe`.
+
+## Build app on macOS
+
+1. Install Python dependencies:
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 -m pip install pyinstaller
+```
+
+2. Put the app icon in the project root as `foldery.icns`.
+
+3. Build the GUI app bundle:
+
+```bash
+pyinstaller --windowed --name Foldery --icon=foldery.icns --paths=. --hidden-import=config --hidden-import=i18n --hidden-import=i18n.catalog --hidden-import=platforms --hidden-import=services --hidden-import=ui --add-data "i18n:i18n" app.py
+```
+
+4. The app bundle will be created in `dist/Foldery.app`.
+
+## Build MSI installer on Windows
+
+1. Install WiX 7 Toolset and make sure `wix` is available in PATH.
+
+2. Build the installer from the project root:
+
+```powershell
+wix build -acceptEula wix7 -ext WixToolset.UI.wixext Product.wxs -out dist/Installer/Foldery.msi
+```
+
+3. The MSI file will be generated in `dist/Installer/Foldery.msi`.
+
+### Notes for the installer
+
+- `Product.wxs` must reference the actual built EXE from `dist\Foldery.exe`
+- keep the icon file in a stable path (for example `assets\foldery.ico` or the project root)
+- if your exe is in a different folder, update the `Source` path in the WiX file
+
+## Build macOS installer
+
+For macOS, the normal deployment flow is:
+
+```bash
+pyinstaller --windowed --name Foldery --icon=foldery.icns --paths=. --hidden-import=config --hidden-import=i18n --hidden-import=i18n.catalog --hidden-import=platforms --hidden-import=services --hidden-import=ui --add-data "i18n:i18n" app.py
+```
+
+Then package the resulting `.app` into a `.dmg` or distribute the `.app` bundle directly. A `.dmg` creation step is optional and depends on your release tooling.
+
 ## Features
 
 - Drive / volume tree on the left; no need to hunt for the root
