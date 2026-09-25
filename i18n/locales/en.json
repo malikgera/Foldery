@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "code": "en",
+    "name": "English",
+    "nativeName": "English"
+  },
+  "app.name": "Foldery",
+  "app.windowTitle": "Foldery",
+
+  "toolbar.pack.none": "No icon pack selected",
+  "toolbar.pack.named": "Pack: {name}",
+  "toolbar.choosePack": "Icon pack…",
+  "toolbar.theme": "Toggle theme",
+  "toolbar.language": "Language",
+
+  "tree.title": "Drives and folders",
+  "tree.hint": "",
+
+  "gallery.title": "Icon gallery",
+  "gallery.search": "Search icons by name…",
+  "gallery.refresh": "Refresh gallery",
+  "gallery.dropHint": "Drop .ico / .png / .icns files here to add them to the pack",
+
+  "preview.title": "Selected folder",
+  "preview.placeholder": "Click a folder on the left or press Browse",
+  "preview.browse": "Browse",
+  "preview.multiHint": "{n} folders selected — the icon will be applied to all of them",
+  "preview.noIcon": "No icon assigned",
+  "preview.customMac": "Custom icon assigned (Finder)",
+  "preview.assign": "Assign icon",
+  "preview.remove": "Remove",
+
+  "status.choosePack": "Choose an icon pack to get started",
+  "status.loaded": "Loaded {n} icons",
+  "status.assigned": "Assigned “{name}” to {n} folder(s)",
+  "status.assignedDrop": "Icon assigned: {name}",
+  "status.removed": "Icon removed",
+  "status.added": "Added {n} icon(s) to the pack",
+  "status.pickFolder": "Select a folder on the left first",
+
+  "dialog.notice": "Notice",
+  "dialog.error": "Error",
+  "dialog.needFolder": "Select a folder (or several) first.",
+  "dialog.needIcon": "Select an icon from the gallery.",
+  "dialog.choosePack": "Choose a folder for the icon pack",
+  "dialog.chooseIconsDir": "Choose a folder with icons",
+  "dialog.chooseFolder": "Choose a folder",
+  "dialog.loadGallery": "Could not load the gallery:\n{error}",
+  "dialog.addFailed": "Could not add {path}:\n{error}",
+  "dialog.assignFailed": "{path}: {error}",
+
+  "error.generic": "{error}",
+  "error.permission": "No permission to write desktop.ini. Run Foldery as administrator.",
+  "error.unsupported": "{system} is not supported. Foldery assigns icons on Windows and macOS.",
+  "error.pillow": "Pillow is required to convert icons to .icns on macOS. Install: pip install Pillow",
+  "error.badImage": "Could not open the image: {error}",
+  "error.iconutil": "iconutil failed to create .icns: {error}",
+  "error.icnsLoad": "Could not load the .icns image.",
+  "error.nsworkspace": "NSWorkspace refused to set the icon (check permissions).",
+  "error.applescript": "Could not set the icon via AppleScript: {error}\nInstall PyObjC for a more reliable path: pip install pyobjc-framework-Cocoa"
+}

@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "code": "ru",
+    "name": "Russian",
+    "nativeName": "Русский"
+  },
+  "app.name": "Foldery",
+  "app.windowTitle": "Foldery",
+
+  "toolbar.pack.none": "Пак иконок не выбран",
+  "toolbar.pack.named": "Пак: {name}",
+  "toolbar.choosePack": "Пак иконок…",
+  "toolbar.theme": "Переключить тему",
+  "toolbar.language": "Язык",
+
+  "tree.title": "Диски и папки",
+  "tree.hint": "",
+
+  "gallery.title": "Галерея иконок",
+  "gallery.search": "Поиск иконки по имени…",
+  "gallery.refresh": "Обновить галерею",
+  "gallery.dropHint": "Перетащите .ico / .png / .icns сюда, чтобы добавить в пак",
+
+  "preview.title": "Выбранная папка",
+  "preview.placeholder": "Кликните по папке слева или нажмите «Обзор»",
+  "preview.browse": "Обзор",
+  "preview.multiHint": "Выбрано папок: {n} — иконка будет назначена всем",
+  "preview.noIcon": "Иконка не назначена",
+  "preview.customMac": "Кастомная иконка назначена (Finder)",
+  "preview.assign": "Назначить иконку",
+  "preview.remove": "Удалить",
+
+  "status.choosePack": "Выберите пак иконок, чтобы начать",
+  "status.loaded": "Загружено иконок: {n}",
+  "status.assigned": "«{name}» назначена {n} папкам",
+  "status.assignedDrop": "Иконка назначена: {name}",
+  "status.removed": "Иконка удалена",
+  "status.added": "Добавлено иконок в пак: {n}",
+  "status.pickFolder": "Сначала выберите папку слева",
+
+  "dialog.notice": "Внимание",
+  "dialog.error": "Ошибка",
+  "dialog.needFolder": "Сначала выберите папку (или несколько).",
+  "dialog.needIcon": "Выберите иконку из галереи.",
+  "dialog.choosePack": "Сначала укажите папку для пака иконок",
+  "dialog.chooseIconsDir": "Выберите папку с иконками",
+  "dialog.chooseFolder": "Выберите папку",
+  "dialog.loadGallery": "Не удалось загрузить галерею:\n{error}",
+  "dialog.addFailed": "Не удалось добавить {path}:\n{error}",
+  "dialog.assignFailed": "{path}: {error}",
+
+  "error.generic": "{error}",
+  "error.permission": "Нет прав на запись desktop.ini. Запустите Foldery от имени администратора.",
+  "error.unsupported": "{system} не поддерживается. Foldery назначает иконки в Windows и macOS.",
+  "error.pillow": "Для конвертации иконок в .icns на macOS нужна библиотека Pillow. Установите: pip install Pillow",
+  "error.badImage": "Не удалось открыть изображение: {error}",
+  "error.iconutil": "iconutil не смог создать .icns: {error}",
+  "error.icnsLoad": "Не удалось загрузить .icns изображение.",
+  "error.nsworkspace": "NSWorkspace отказался назначить иконку (проверьте права доступа).",
+  "error.applescript": "Не удалось назначить иконку через AppleScript: {error}\nУстановите PyObjC: pip install pyobjc-framework-Cocoa"
+}

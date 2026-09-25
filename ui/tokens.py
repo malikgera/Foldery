@@ -1,0 +1,26 @@
+from config import IS_MACOS, IS_WINDOWS
+
+
+class Tokens:
+    ACCENT = "#0A84FF"
+    ACCENT_HOVER = "#3B9CFF"
+    ACCENT_PRESSED = "#0064D1"
+    DANGER = "#FF453A"
+
+    GLASS_LIGHT = "rgba(255, 255, 255, 150)"
+    GLASS_LIGHT_SOLID = "#FFFFFF"
+    PANEL_BORDER_LIGHT = "rgba(0, 0, 0, 28)"
+    TEXT_PRIMARY_LIGHT = "#1D1D1F"
+    TEXT_SECONDARY_LIGHT = "#6E6E73"
+
+    GLASS_DARK = "rgba(40, 40, 44, 150)"
+    GLASS_DARK_SOLID = "#2A2A2E"
+    PANEL_BORDER_DARK = "rgba(255, 255, 255, 22)"
+    TEXT_PRIMARY_DARK = "#F5F5F7"
+    TEXT_SECONDARY_DARK = "#98989D"
+
+    RADIUS_LG = 16
+    RADIUS_MD = 12
+    RADIUS_SM = 8
+
+    FONT_FAMILY = "Segoe UI" if IS_WINDOWS else ("SF Pro Display" if IS_MACOS else "Segoe UI")
