@@ -1,3 +1,4 @@
 PyQt6>=6.6.0
 Pillow>=10.0.0
 pyobjc-framework-Cocoa>=10.0; sys_platform == "darwin"
+pyinstaller>=5.0.0

@@ -233,7 +233,7 @@ class MainWindow(QMainWindow):
 
         self._btn_theme = QToolButton()
         self._btn_theme.setText("Theme")
-        self._btn_theme.setIcon(QIcon("icons/theme-icon.svg"))
+        self._btn_theme.setIcon(QIcon("assets/icons/theme-icon.svg"))
         self._btn_theme.clicked.connect(self.toggle_theme)
         layout.addWidget(self._btn_theme)
         return bar
@@ -288,7 +288,7 @@ class MainWindow(QMainWindow):
         header.addStretch(1)
         self._btn_refresh = QToolButton()
         self._btn_refresh.setText("Refresh")
-        self._btn_refresh.setIcon(QIcon("icons/refresh-icon.svg"))
+        self._btn_refresh.setIcon(QIcon("assets/icons/refresh-icon.svg"))
         self._btn_refresh.clicked.connect(self.reload_gallery)
         header.addWidget(self._btn_refresh)
         layout.addLayout(header)

@@ -39,12 +39,12 @@ python -m pip install -r requirements.txt
 python -m pip install pyinstaller
 ```
 
-2. Put the app icon in the project root as `icon.ico`.
+2. Put the app icon in the project root as `foldery.ico`.
 
 3. Build a single-file EXE:
 
 ```powershell
-pyinstaller --onefile --noconsole --name Foldery --icon=icon.ico --paths=. --hidden-import=config --hidden-import=i18n --hidden-import=i18n.catalog --hidden-import=platforms --hidden-import=services --hidden-import=ui app.py
+pyinstaller --onefile --noconsole --name Foldery --icon=foldery.ico --paths=. --hidden-import=config --hidden-import=i18n --hidden-import=i18n.catalog --hidden-import=platforms --hidden-import=services --hidden-import=ui --add-data "i18n;i18n" app.py
 ```
 
 4. The EXE will be created in `dist\Foldery.exe`.
@@ -55,7 +55,6 @@ pyinstaller --onefile --noconsole --name Foldery --icon=icon.ico --paths=. --hid
 
 ```bash
 python3 -m pip install -r requirements.txt
-python3 -m pip install pyinstaller
 ```
 
 2. Put the app icon in the project root as `foldery.icns`.

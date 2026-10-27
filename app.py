@@ -18,7 +18,7 @@ from ui.main_window import MainWindow
 
 def main() -> None:
     app = QApplication(sys.argv)
-    icon_path = BASE_DIR / "icon.ico"
+    icon_path = BASE_DIR / "foldery.ico"
     if icon_path.exists():
         app.setWindowIcon(QIcon(str(icon_path)))
     app.setApplicationName(APP_NAME)

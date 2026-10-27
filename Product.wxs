@@ -16,7 +16,7 @@
 
     <MediaTemplate CabinetTemplate="data{0}.cab" CompressionLevel="high" />
 
-    <Icon Id="FolderyIcon" SourceFile="icon.ico" />
+    <Icon Id="FolderyIcon" SourceFile="foldery.ico" />
     <Property Id="ARPPRODUCTICON" Value="FolderyIcon" />
 
     <StandardDirectory Id="ProgramFiles64Folder">
